@@ -1,7 +1,7 @@
 import logging
 import logging.config
 
-logging.config.fileConfig("logging.ini")
+logging.config.fileConfig("logging.ini", disable_existing_loggers=False)
 
 import os
 from os.path import join
